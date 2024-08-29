@@ -3,15 +3,9 @@
 
 ### Primary
 
-Moderate violet: hsl(263, 55%, 52%)
-Very dark grayish blue: hsl(217, 19%, 35%)
-Very dark blackish blue: hsl(219, 29%, 14%)
-White: hsl(0, 0%, 100%)
 
 ### Neutral
 
-Light gray: hsl(0, 0%, 81%)
-Light grayish blue: hsl(210, 46%, 95%)
 
 Note for text colors:
 
@@ -35,12 +29,12 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
   --white: hsl(0, 0%, 100%);
-  --cream: hsl(30, 38%, 92%);
-  --aurometal-saurus: hsl(228, 12%, 48%);
-  --deep-aquamarine: hsl(158, 36%, 37%);
-  --deep-aquamarine-hover: hsl(157, 43%, 18%);
-  --gunmetal: hsl(212, 21%, 14%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
   --ff-head: "Fraunces", serif;
   --ff-body: "Montserrat", sans-serif;
   --fz-1: calc(32 / 16 * 1rem);
