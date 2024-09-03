@@ -2,31 +2,9 @@
 @use "sass:math";
 @use "sass:map";
 @use "sass:list";
-
 /* 
-## Colors
-
-### Primary
-
-
-### Neutral
-
-
-Note for text colors:
-
-1. "Verified Graduate" has the same color as the person's name with 50% opacity
-2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
-
-## Typography
-
-### Body Copy
-
-- Font size: 13px
-
-### Font
-
-- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
-- Weights: 500, 600
+1. .profile__description same color as .profile__title opacity: .5;
+2. .card__quote same color as well, but opacity: .7;
  */
 
 /* #region Defaults */
@@ -42,14 +20,15 @@ html {
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(0, 0%, 81%);
   --light-grayish-blue: hsl(210, 46%, 95%);
-
   
-  --ff-head: "Fraunces", serif;
-  --ff-body: "Montserrat", sans-serif;
+  --ff-body: "Barlow Semi Condensed", sans-serif;
 
-  --fz-1: calc(32 / 16 * 1rem);
-  --fz-2: calc(14 / 16 * 1rem);
-  --fz-3: calc(12 / 16 * 1rem);
+  --fz-head: calc(20 / 16 * 1rem);
+  --fz-body: calc(13 / 16 * 1rem);
+  --fz-sub: calc(11 / 16 * 1rem);
+
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
 
   --s-500: calc(40 / 16 * 1rem);
   --s-300: calc(24 / 16 * 1rem);
@@ -68,7 +47,8 @@ body {
   height: inherit;
   font-optical-sizing: auto;
   font-family: var(--ff-body);
-  background-color: var(--cream);
+  font-size: var(--fz-body);
+  background-color: var(--light-grayish-blue);
 }
 
 .attribution {
@@ -78,17 +58,17 @@ body {
   bottom: 1rem;
   font-size: rem(11px);
   text-align: center;
-  color: var(--aurometal-saurus);
+  color: var(--very-dark-grayish-blue);
 }
 
 .attribution a {
   transition: .4s;
-  color: var(--gunmetal);
+  color: var(--very-dark-blackish-blue);
 }
 
 .attribution a:hover,
 .attribution a:visited {
-  color: var(--deep-aquamarine);
+  color: var(--moderate-violet);
   text-decoration: none;
 }
 /* #endregion Defaults */
