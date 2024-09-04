@@ -83,10 +83,41 @@ body {
 /* #region Mobile 375px */
 main {
   width: inherit;
-  height: inherit;
+  height: auto;
   display: grid;
   place-content: center;
 }
+
+.container {
+  padding-block: rem(71px);
+  padding-inline: var(--s-300);
+  row-gap: var(--s-300);
+}
+
+.card {
+  width: rem(327px);
+  border-radius: var(--s-100);
+}
+
+.card__profile {}
+.profile__img {}
+.profile__text {}
+.profile__title {}
+.profile__description {}
+.card__blockquote {}
+.card__quote {}
+
+.card__1 {
+  background-color: var(--moderate-violet);
+  background-image: url(../assets/images/bg-pattern-quotation.svg);
+  background-position: top right;
+  background-size: 104px 102px;
+}
+
+.card__2 {background-color: var(--very-dark-grayish-blue);}
+.card__3 {background-color: var(--white);}
+.card__4 {background-color: var(--very-dark-blackish-blue);}
+.card__5 {background-color: var(--white);}
 
 /* #endregion Mobile 375px */
 

@@ -76,9 +76,43 @@ body {
 /* #region Mobile 375px */
 main {
   width: inherit;
-  height: inherit;
+  height: auto;
   display: grid;
   place-content: center;
+}
+
+.container {
+  padding-block: 4.4375rem;
+  padding-inline: var(--s-300);
+  row-gap: var(--s-300);
+}
+
+.card {
+  width: 20.4375rem;
+  border-radius: var(--s-100);
+}
+
+.card__1 {
+  background-color: var(--moderate-violet);
+  background-image: url(../assets/images/bg-pattern-quotation.svg);
+  background-position: top right;
+  background-size: 104px 102px;
+}
+
+.card__2 {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card__3 {
+  background-color: var(--white);
+}
+
+.card__4 {
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.card__5 {
+  background-color: var(--white);
 }
 
 /* #endregion Mobile 375px */
