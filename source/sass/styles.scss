@@ -14,8 +14,8 @@ html {
   --very-dark-grayish-blue: hsl(217, 19%, 35%);
   --very-dark-blackish-blue: hsl(219, 29%, 14%);
   --white: hsl(0, 0%, 100%);
-  --light-gray: hsl(0, 0%, 81%);
-  --light-grayish-blue: hsl(210, 46%, 95%);
+  --light-gray: #cfcfcf;
+  --light-grayish-blue: #ecf2f8;
   
   --ff-body: "Barlow Semi Condensed", sans-serif;
 
@@ -93,7 +93,7 @@ main {
 .card {
   width: rem(327px);
   border-radius: var(--s-100);
-  padding: rem(26px) rem(32px) rem(32px) rem(32px);
+  padding: rem(26px) rem(32px) rem(32px);
 }
 
 .card__profile {
@@ -107,7 +107,7 @@ main {
   box-sizing: content-box;
   width: rem(28px);
   height: rem(28px);
-  border: 2px solid transparent;
+  border: rem(2px) solid transparent;
   border-radius: 100vmax;
 }
 
@@ -158,7 +158,7 @@ main {
   }
 
   .card__quote {
-    color: #cfcfcf;
+    color: var(--light-gray);
   }
 
   .profile__img {
@@ -182,25 +182,70 @@ main {
   color: var(--white);
 
   .profile__img {
-    border-color: hsl(263, 55%, 52%);
+    border-color: var(--moderate-violet);
   }
 }
-
 /* #endregion Mobile 375px */
 
 /* #region Extra Small 320px */
 @include desktop-media-query(374px) {
-
+  .container {
+    row-gap: var(--s-150);
+  }
+  
+  .card {
+    width: rem(280px);
+    padding: rem(26px);
+  }
+  
+  .card__profile {
+    column-gap: rem(12px);
+    margin-block-end: rem(13px);
+  }
+  
+  .card__blockquote {
+    margin-block-end: rem(8px);
+  }
+  
+  .card__1 {
+    .card__blockquote {
+      margin-block-end: rem(20px);
+    }
+  }
 }
 /* #endregion Extra Small 320px */
 
-/* #region Desktop 768px */
-@include mobile-media-query(768px) {
+/* #region Desktop 1150px */
+@include mobile-media-query(1150px) {
   .attribution {
     position: fixed;
   }
-}
 
+  main {
+    height: inherit;
+  }
+
+  .container {
+    padding-inline: unset;
+    padding-block: unset;
+    gap: rem(24px) rem(30px);
+    grid:
+    "a a b e"
+    "c d d e"
+    ;
+    grid-template-columns: repeat(4, rem(255px));
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card__1 {grid-area: a;}
+  .card__2 {grid-area: b;}
+  .card__3 {grid-area: c;}
+  .card__4 {grid-area: d;}
+  .card__5 {grid-area: e;}
+}
 /* Desktop Active */
 
-/* #endregion Desktop 768px */
+/* #endregion Desktop 1150px */
