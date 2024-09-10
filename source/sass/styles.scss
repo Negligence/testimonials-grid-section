@@ -240,11 +240,44 @@ main {
     width: 100%;
   }
 
-  .card__1 {grid-area: a;}
-  .card__2 {grid-area: b;}
-  .card__3 {grid-area: c;}
-  .card__4 {grid-area: d;}
-  .card__5 {grid-area: e;}
+  .card__1 {
+    grid-area: a;
+
+    > svg {
+      right: rem(80px);
+    }
+    
+    .card__blockquote {
+      margin-block-end: rem(16px);
+    }
+  }
+
+  .card__2 {
+    grid-area: b;
+
+    .card__blockquote {
+      margin-block-end: rem(16px);
+    }
+  }
+
+  .card__3 {
+    grid-area: c;
+    padding: rem(26px) rem(32px);
+  }
+
+  .card__4 {
+    grid-area: d;
+    padding: rem(26px) rem(32px);
+  }
+
+  .card__5 {
+    grid-area: e;
+    padding: rem(26px) rem(32px);
+  }
+  
+  .card__blockquote {
+    margin-block-end: rem(24px);
+  }
 }
 /* Desktop Active */
 
