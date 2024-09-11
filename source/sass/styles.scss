@@ -230,8 +230,8 @@ main {
     padding-block: unset;
     gap: rem(24px) rem(30px);
     grid:
-    "a a b e"
-    "c d d e"
+    "a a b e" rem(282px)
+    "c d d e" rem(266px)
     ;
     grid-template-columns: repeat(4, rem(255px));
   }
