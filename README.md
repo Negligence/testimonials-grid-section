@@ -69,16 +69,6 @@ The designs were created to the following widths:
 
 I learned to tweak and rename the design containers in figma to make it easier to translate it to html code structure.
 
-```html
-
-```
-
-I also found it handy to create classes based on the figma design local styles.
-
-```scss
-
-```
-
 ### Continued development
 
 These functions will be very helpful moving forward with future projects.
