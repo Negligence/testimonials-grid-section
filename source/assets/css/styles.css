@@ -231,15 +231,12 @@ main {
   }
   .card__3 {
     grid-area: c;
-    padding: 1.625rem 2rem;
   }
   .card__4 {
     grid-area: d;
-    padding: 1.625rem 2rem;
   }
   .card__5 {
     grid-area: e;
-    padding: 1.625rem 2rem;
   }
   .card__blockquote {
     margin-block-end: 1.5rem;
